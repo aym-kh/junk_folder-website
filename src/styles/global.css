@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+:root {
+	color-scheme: dark;
+	font-family: "Plus Jakarta Sans", Inter, ui-sans-serif, system-ui, sans-serif;
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	scroll-behavior: smooth;
+	background: #0a0a0b;
+}
+
+body {
+	margin: 0;
+}
+
+::selection {
+	color: #0a0a0b;
+	background: #f5f5f5;
+}
+
+.font-mono {
+	font-family: "DM Mono", "SFMono-Regular", Consolas, monospace;
+}
+
+.window-shell {
+	background:
+		radial-gradient(ellipse at 76% 33%, rgb(255 255 255 / 4%), transparent 35%),
+		#0c0c0e;
+}
+
+.grid-glow {
+	background-image: radial-gradient(rgb(255 255 255 / 11%) 0.65px, transparent 0.65px);
+	background-size: 17px 17px;
+	mask-image: linear-gradient(to bottom, black, transparent 88%);
+}
+
+.glass-card {
+	background: linear-gradient(135deg, rgb(255 255 255 / 6%), rgb(255 255 255 / 2%));
+	backdrop-filter: blur(18px);
+}
+
+.hero-art {
+	filter: drop-shadow(0 30px 50px rgb(0 0 0 / 48%));
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.float-art {
+		animation: float 7s ease-in-out infinite;
+	}
+
+	@keyframes float {
+		0%,
+		100% {
+			transform: translateY(0);
+		}
+
+		50% {
+			transform: translateY(-9px);
+		}
+	}
+}
