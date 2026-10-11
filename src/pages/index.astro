@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import GitHubButton from "../components/githubButton.astro";
 ---
 
 <Layout>
@@ -8,19 +9,11 @@ import Layout from "../layouts/Layout.astro";
 		id="top"
 	>
 		<a href="#top" aria-label="Junk Drawer home">
-			<span class="text-sm font-semibold tracking-[-0.03em] text-white/90"
+			<span class="text-xl font-thin tracking-[-0.03em] text-white/90"
 				>Junk Drawer</span
 			>
 		</a>
-		<nav
-			aria-label="Main navigation"
-			class="hidden items-center gap-8 sm:flex"
-		>
-			<a
-				class="rounded-full border border-white/15 px-4 py-2 text-xs font-medium text-white/80 transition hover:border-white/35 hover:bg-white/[0.06] hover:text-white"
-				href="#download">Download</a
-			>
-		</nav>
+		<GitHubButton user="aym-kh" repo="junk_drawer" />
 		<a
 			class="rounded-full border border-white/15 px-3.5 py-2 text-xs font-medium text-white/80 transition hover:border-white/35 sm:hidden"
 			href="#download">Get the app</a
